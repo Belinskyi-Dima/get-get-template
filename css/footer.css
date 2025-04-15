@@ -1,0 +1,153 @@
+.footer {
+  width: 100%;
+}
+.conatiner-footer {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  padding-top: 96px;
+}
+.footer__wrapper {
+  /* background: linear-gradient(90deg, #6a0dad 0%, #4a0072 100%); */
+  /* background: linear-gradient(180deg, #5c1e8e 0%, #5d32f6 100%); */
+  background: linear-gradient(180deg, #5C1E8E 0%,  #5D32F6 100%);
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer__scan-wrapper {
+  position: absolute;
+  top: -13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 113px;
+  height: 113px;
+  background-color: #5c1e8e;
+  background-image: url("../images/footer/scan2.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+  border-radius: 50%;
+}
+.footer__top {
+   
+  display: flex; 
+  justify-content: flex-end;
+  
+margin-bottom: 130px;
+
+}
+.footer__img-wrapper {
+  position: absolute;
+  top: -50px;
+  left: 42px;
+}
+.footer__content-wrapper{
+  max-width: 650px;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  margin-right: 3%;
+
+
+}
+.footer__content {
+  text-align: left; 
+}
+.footer__title {
+  color: #EAFA5E;
+  margin-bottom: 16px;
+}
+.subtitle {
+  margin-bottom: 16px;
+}
+
+
+.footer__btn-wrapper {
+  margin-left: 0;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: left;
+  margin-left: 72px;
+  gap: 16px;
+ 
+}
+.download-btn {
+  
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px 80px;
+  align-items: center;
+
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.footer__btn {
+  background: #fff;
+}
+.footer__btn:hover {
+  background-color: rgba(129, 129, 129, 0.8);
+
+}
+.footer__btn:active {
+  background-color: rgba(129, 129, 129, 0.6);
+  transform: scale(0.95);
+}
+
+
+
+.footer__bootom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 72px;
+}
+.footer__social-wrapper {
+  display: flex;
+
+  row-gap: 34px; 
+  flex-direction: column-reverse;
+ }
+.footer__socials {
+  display: flex;
+  column-gap: 24px ;
+}
+.footer__social-link {
+
+   transition: transform 0.3s ease;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1); 
+  
+}
+
+
+
+
+.footer__copyright {
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+}
+
+.footer__link {
+  color: #fff;
+ 
+  text-decoration: underline;
+ 
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #d9f3ff; 
+  
+}

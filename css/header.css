@@ -1,0 +1,109 @@
+
+.header {
+  padding-top: 48px;
+
+}
+.header_logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo__text {
+  color: var(--color-primery);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__menu {
+  padding-block: 28px;
+  
+}
+.header__menu-list{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  font-weight: 600;
+  background: var(--bd-color);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  cursor: pointer;
+}
+.header__menu-link {
+  position: relative;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  color: var(--color-dark);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__menu-link:focus {
+  background: linear-gradient(90deg, #ADF3EC 0%, #79ECE1 100%);
+  opacity: 0.9;
+  transform: scale(0.95);
+}
+.header__menu-link:active {
+  background: linear-gradient(90deg, #ADF3EC 0%, #79ECE1 100%);
+  
+  opacity: 0.9;
+  transform: scale(0.95);
+
+}
+
+.header__menu-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  opacity: 0;
+  padding: 2px;
+  background: linear-gradient(to bottom, #8ED5CE, #4ED3BD);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+.header__menu-link:hover::before {
+  opacity: 1;
+}
+  .is-current {
+ 
+    background: var(--gradient-collor);
+   
+      transform: scale(0.95);
+
+  }
+
+  .header__menu-link.is-current:hover::before {
+    opacity: 0;
+  }
+
+  .menu-button {
+      background: #fff;
+      padding: 22px 32px;
+      border-radius: var(--border-radius);
+      z-index: 1;
+    
+      display: none;
+      flex-direction: column;
+    
+      justify-content: center;
+      align-items: center;
+    
+      box-shadow: var(--box-shadow);
+    }
+    .line {
+      width: 30px;
+      height: 3px;
+      background-color: #252432;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+    }

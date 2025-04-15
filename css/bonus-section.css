@@ -1,0 +1,27 @@
+.bonus-info {
+  /* background-color: #eaf8ff;  */
+  /* background-color: #fff; */
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--border-radius) ;
+  margin-bottom: 96px;
+}
+
+
+
+.bonus-info__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-bottom: 16px;
+}
+
+.bonus-info__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto 12px;
+  max-width: 720px;
+}
